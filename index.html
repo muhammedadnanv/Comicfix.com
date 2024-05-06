@@ -109,7 +109,16 @@
 <!-- Footer -->
 <footer>
   <div class="container text-center">
-    <p>&copy; 2024 ComicFix. All rights reserved. | </p>
+    <p>&copy; 2024 ComicFix. All rights reserved.<button id="executeButton">Execute .bat</button>
+
+    <script>
+        document.getElementById("executeButton").onclick = function() {
+            // Send a request to the PHP script when the button is clicked
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "execute_bat.php", true);
+            xhr.send();
+        };
+    </script> | </p>
   </div>
 </footer>
 
