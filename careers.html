@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComicFix Careers</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+      background-color: #f8f9fa;
+    }
+    nav.navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav.navbar a.navbar-brand {
+      font-weight: bold;
+      color: #333333;
+    }
+    #vacancies {
+      padding: 100px 0;
+    }
+    #vacancies .container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+    }
+    #vacancies h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333333;
+    }
+    #vacancies ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #vacancies h4 {
+      margin-top: 20px;
+    }
+    #careers-benefits {
+      background-color: #ffffff;
+      padding: 50px 0;
+    }
+    #careers-benefits .container {
+      text-align: center;
+    }
+    #careers-benefits h3 {
+      color: #333333;
+      margin-bottom: 30px;
+    }
+    #careers-benefits ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #careers-benefits ul li {
+      margin-bottom: 15px;
+    }
+    /* CSS animations and transitions */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">ComicFix</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Vacancies Section -->
+<section id="vacancies">
+  <div class="container">
+    <h2 class="animated fadeInUp">ComicFix Careers</h2>
+    <ul id="vacancy-list"></ul>
+  </div>
+</section>
+
+<!-- ComicFix Careers Benefits -->
+<section id="careers-benefits">
+  <div class="container">
+    <h3 class="animated fadeInUp">Careers Benefits at ComicFix</h3>
+    <ul class="animated fadeInUp">
+      <li>Opportunity to work with cutting-edge technologies and frameworks</li>
+      <li>Flexible work hours and remote work options</li>
+      <li>Competitive compensation and performance-based incentives</li>
+      <li>Continuous learning and professional development opportunities</li>
+      <li>A supportive and inclusive work culture that values creativity and innovation</li>
+      <!-- Add more benefits here -->
+    </ul>
+  </div>
+</section>
+
+<!-- JavaScript dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript for populating vacancies -->
+<script>
+  // Vacancies data in array format
+  var vacancies = [
+    {
+      position: "Flutter Developer",
+      location: "Kerala",
+      experience: "Fresher",
+      salary: "That is based On your projects",
+      skills: "Proficient in Flutter, Dart, Firebase",
+      responsibilities: [
+        "Developing mobile applications using Flutter framework",
+        "Integrating Firebase services for authentication, database, and storage",
+        "Collaborating with cross-functional teams to define, design, and ship new features",
+        "Unit-testing code for robustness, including edge cases, usability, and general reliability"
+      ]
+    },
+    // Add more vacancies here in the same format
+  ];
+
+  // Function to populate vacancies
+  function populateVacancies() {
+    var vacancyList = document.getElementById("vacancy-list");
+
+    vacancies.forEach(function(vacancy) {
+      var listItem = document.createElement("li");
+      listItem.innerHTML = `
+        <h4>${vacancy.position}</h4>
+        <p><strong>Location:</strong> ${vacancy.location}</p>
+        <p><strong>Experience:</strong> ${vacancy.experience}</p>
+        <p><strong>Salary:</strong> ${vacancy.salary}</p>
+        <p><strong>Skills:</strong> ${vacancy.skills}</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          ${vacancy.responsibilities.map(responsibility => `<li>${responsibility}</li>`).join('')}
+        </ul>
+      `;
+      vacancyList.appendChild(listItem);
+    });
+  }
+
+  // Call the function to populate vacancies
+  populateVacancies();
+</script>
+
+</body>
+</html>
+
