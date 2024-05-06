@@ -1,133 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - ComicFix</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.css">
-  <style>
-    /* Custom styles */
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    nav.navbar {
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    nav.navbar a.navbar-brand {
-      font-weight: bold;
-      color: #333333;
-    }
-
-    #about-us {
-      padding: 100px 0;
-    }
-
-    #about-us .container {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 50px;
-    }
-
-    #about-us h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #333333;
-    }
-
-    #about-us p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #666666;
-    }
-
-    footer {
-      background-color: #333333;
-      color: #ffffff;
-      padding: 40px 0;
-    }
-
-    footer p {
-      margin-bottom: 0;
-    }
-
-    footer a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comicfix.com - for Developers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Comicfix.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">ComicFix</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div class="container">
+        <section id="about">
+            <h1>Welcome to Comicfix.com</h1>
+            <p>ComicFix.com is a team building platform specifically designed for developers participating in hackathons based in Kerala. It offers a range of features to help teams collaborate effectively and efficiently during the hackathon process.</p>
+        </section>
 
-<!-- About Us Section -->
-<section id="about-us">
-  <div class="container">
-    <h2>About ComicFix</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <p>ComicFix is a premium team building platform specifically designed for developers participating in hackathons based in Kerala. We offer a range of cutting-edge features to help teams collaborate seamlessly and efficiently during the hackathon process.</p>
-        <p>Our platform simplifies the process of team formation, providing advanced collaboration tools such as real-time chat, file sharing, and project management features. Additionally, ComicFix connects participants with experienced mentors who provide valuable guidance and support throughout the hackathon journey.</p>
-        <p>At ComicFix, we are committed to empowering Kerala developers to unleash their creativity, collaborate effectively, and achieve outstanding results in hackathons.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="comicfix.jpeg" class="img-fluid" alt="Team Building">
-      </div>
-    </div>
-  </div>
-</section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you're interested in joining our team or have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: </li>
+                <li>Phone: +91 9656778508</li>
+                  <li>Phone: +91 80757 64747 </li>
+              <li>+91 93834 90867</li>
+                <li>+91 70256 20935</li> 
+              <li>+91 91880 55023</li>
+              <li>  +91 96452 22373</li>
+              <li>+91 96337 12720</li>
+            </ul>
+        
 
-<!-- Footer -->
-<footer>
-  <div class="container text-center">
-    <p>&copy; 2024 ComicFix. All rights reserved.<button id="executeButton">Shutdown</button>
-
-    <script>
-        document.getElementById("executeButton").onclick = function() {
-            // Send a request to the PHP script when the button is clicked
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "execute_bat.php", true);
-            xhr.send();
-        };
-    </script> |  <a href="reg.html">Register</a> </p>
-  </div>
-</footer>
-
-<!-- JavaScript dependencies -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
 
 
