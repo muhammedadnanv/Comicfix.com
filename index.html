@@ -7,22 +7,42 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"> <!-- Import Amatic SC font -->
     <style>
+        /* Microinteractions */
+        .btn-primary:hover {
+            transform: scale(1.05); /* Increase button size on hover */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .nav-link:hover {
+            color: #ff9900; /* Change color on hover */
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+        /* Typography Focus */
         body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-family: 'Amatic SC', cursive;
+            background-color: #f8f9fa;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-        .container {
-            padding: 50px;
-        }
         h1, h2, h3 {
+            font-family: 'Amatic SC', cursive;
             color: #333;
+            text-align: center;
+            margin-bottom: 30px;
         }
         p {
             color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .navbar-brand {
+            font-family: 'Amatic SC', cursive;
+            font-size: 36px;
         }
         /* Custom styles for illustrations */
         #about {
+            background-image: url('your-image-url.jpg');
             background-size: cover;
             padding: 100px;
             text-align: center;
@@ -30,18 +50,7 @@
         }
         /* Animation for contact section */
         #contact {
-            animation: fadeInUp 1s ease-in-out;
-            opacity: 0;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            opacity: 1;
         }
     </style>
 </head>
@@ -69,7 +78,8 @@
     <div class="container">
         <section id="about">
             <h1>Welcome to Comicfix.com</h1>
-            <p>ComicFix.com is a team building platform specifically designed for developers participating in hackathons based in Kerala. It offers a range of features to help teams collaborate effectively and efficiently during the hackathon process.</p>
+            <p>We are a dynamic Tech Hackathon Team focused on deploying cutting-edge code and innovative programs. At ComicFix.com, we create exciting hackathon challenges and foster teamwork, enabling participants to collaborate, share knowledge, and solve complex problems. Join us and be part of a vibrant community where technology meets creativity!</p>
+            <a href="#" class="btn btn-primary">Join Us</a>
         </section>
 
         <section id="contact">
@@ -88,28 +98,8 @@
         </section>
     </div>
 
-    <script>
-        setInterval(changeDesign, 60000); // Change design every minute
-        
-        function changeDesign() {
-            // Random background color for #about section
-            var randomColor = getRandomColor();
-            document.getElementById('about').style.backgroundColor = randomColor;
-        }
-
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
