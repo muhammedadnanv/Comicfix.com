@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Social Media Accounts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: #333333;
+        }
+        .social-media-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .social-media-list li {
+            margin-right: 10px;
+        }
+        .social-media-list li:last-child {
+            margin-right: 0;
+        }
+        .social-media-list li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .social-media-list li a:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+        /* Microinteractions */
+        .social-media-list li a i {
+            transition: transform 0.3s ease;
+        }
+        .social-media-list li a:hover i {
+            transform: scale(1.2);
+        }
+        /* Typography Focus */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Our Social Media Accounts</h1>
+
+    <ul class="social-media-list">
+        
+        <li><a href="https://x.com/comicfixin" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/comicfix.in/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <!-- Add more social media links here -->
+    </ul>
+
+    <p>Follow us on social media to stay updated with our latest news, events, and announcements!</p>
+</div>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
